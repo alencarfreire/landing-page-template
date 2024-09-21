@@ -246,3 +246,92 @@ section header .title-section {
   letter-spacing: 0.1px;
   list-style: disc;
 }
+
+.review {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviews-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  padding: 24px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 101, 242, 0.1),
+    0px 1px 4px 0px rgba(0, 101, 242, 0.1);
+}
+
+.review-card-boxavatar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-card-boxavatar .avatar {
+  width: 48px;
+}
+
+.review-card-boxavatar-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card-text-depoiment {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.review-card-boxavatar-social p {
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+}
+
+.social-icons img {
+  height: 16px;
+}
+
+.step {
+  flex-direction: column;
+  background-color: var(--neutral-grey-95);
+  gap: 98px;
+}
+
+.steps-cards {
+  display: flex;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-card img {
+  width: 48px;
+}
+
+.step-card h5 {
+font-size: 24px;
+font-weight: 600;
+line-height: 24px;
+}
+
+.step-card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; 
+}
