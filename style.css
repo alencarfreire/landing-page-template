@@ -383,6 +383,7 @@ section header .title-section {
   line-height: 28px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .faq dd {
@@ -406,4 +407,40 @@ footer .inscricao {
   flex-direction: column;
   max-width: 326px;
   gap: 24px;
+}
+
+.js-accordion dd {
+  display: none;
+}
+
+.js-accordion dd.ativo {
+  display: block !important;
+  animation: slideDown 0.5s forwards;
+}
+
+.js-accordion img.ativo {
+  rotate: 90deg;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 100px;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
